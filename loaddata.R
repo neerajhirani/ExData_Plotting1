@@ -11,3 +11,5 @@ newdata <- filter(data, Date=="1/2/2007" | Date == "2/2/2007")
 # Convert the times
 datetime <- paste(as.Date(newdata$Date), newdata$Time)
 newdata$datetime <- as.POSIXct(datetime)
+dim(newdata)
+attach(newdata)
